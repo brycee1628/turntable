@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+.circle-wrap {
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(to top, #324a59 0%, #253945 100%);
+    border-radius: 50%;
+    border: 10px solid #b79973;
+}
+
+.circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.item {
+    width: 2px;
+    height: 600px;
+    background-color: #b79973;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.eat-1 {
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.eat-2 {
+    position: absolute;
+    right: 30%;
+    top: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.eat-3 {
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.eat-4 {
+    position: absolute;
+    right: 30%;
+    bottom: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.eat-5 {
+    position: absolute;
+    left: 30%;
+    bottom: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.eat-6 {
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    left: 44.5%;
+    top: 44.5%;
+    width: 70px;
+    height: 70px;
+    background-color: #c5ad8f;
+    border-radius: 50%;
+    z-index: 9999;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5rem;
+    color: #253945;
+}
+
+.center::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 200px;
+    border-radius: 100% 100% 0 0;
+    background-color: #c5ad8f;
+    position: absolute;
+    left: 41%;
+    top: -250%;
+    z-index: -1;
+}
+
+.input-wrap {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrap > input {
+    height: 25px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 10px 1px #00000026;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-wrap > button {
+    display: inline-block;
+    height: 31px;
+    border-radius: 3px;
+    border: none;
+    background-color: #b79973;
+    color: #fff;
+    font-size: 0.625rem;
+    padding: 0 20px;
+}
