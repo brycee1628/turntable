@@ -8,7 +8,7 @@ const eat4 = document.querySelector(".eat-4");
 const eat5 = document.querySelector(".eat-5");
 const eat6 = document.querySelector(".eat-6");
 const eat = document.querySelectorAll(".eat");
-const input = document.querySelector('input');
+const input = document.querySelector('.in');
 const button = document.querySelector('button');
 // 餐廳
 let ar = ["", "", "", "", "", ""];
@@ -17,7 +17,9 @@ console.log(ar);
 let value;
 const inputValue = (e) => {
     value = e.target.value;
+    
 };
+
 input.addEventListener('input', inputValue);
 button.addEventListener('click', () => {
     ar.shift();
